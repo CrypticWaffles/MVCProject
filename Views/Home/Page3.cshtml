@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = "GLayout";
+}
+@model MVCProject.Models.UserInfo
+
+<h1>Page 3</h1>
+
+<form asp-action="UpdateUser" method="post">
+    <label>First Name</label>
+    <input asp-for="FName" value="@Model.FName" />
+    <br />
+
+    <label>Last Name</label>
+    <input asp-for="LName" value="@Model.LName" />
+    <br />
+
+    <label>Email</label>
+    <input asp-for="Email" value="@Model.Email" />
+    <br />
+
+    <label>Phone Number</label>
+    <input asp-for="Phone" value="@Model.Phone" />
+    <br />
+
+    <label>Address</label>
+    <input asp-for="Address" value="@Model.Address" />
+    <br />
+
+    <label>Username</label>
+    <input asp-for="Username" value="@Model.Username" />
+    <br />
+
+    <label>Password</label>
+    <input asp-for="Password" value="@Model.Password" />
+    <br />
+
+    <button type="submit">Submit</button>
+</form>

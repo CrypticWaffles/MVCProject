@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "GLayout";
+}
+
+@model MVCProject.Models.UserInfo
+
+<h1>Page 2</h1>
+
+<label>First Name:</label>
+@Model.FName 
+<br />
+
+<label>Last Name:</label>
+@Model.LName 
+<br />
+
+<label>Email:</label>
+@Model.Email 
+<br />
+
+<label>Phone Number:</label>
+@Model.Phone
+<br />
+
+<label>Address:</label>
+@Model.Address
+<br />
+
+<label">Username:</label>
+@Model.Username
+<br />
+
+<label>Password:</label>
+@Model.Password
+<br />
+
+@ViewBag.Message
+
+<a href="@Url.Action("Page3", "Home")">Edit</a> <br />
+<a href="@Url.Action("DeleteUser", "Home")">Delete</a>

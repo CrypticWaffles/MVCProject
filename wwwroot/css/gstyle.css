@@ -1,0 +1,19 @@
+﻿body {
+}
+
+header{
+    height:100px;
+    width:100%;
+    background-color:aquamarine;
+}
+#headerText{
+    font-size:30px;
+    text-align:center;
+}
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    font-size: 20px;
+}

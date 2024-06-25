@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "GLayout";
+}
+
+@model MVCProject.Models.UserInfo
+
+<h1>Index</h1>
+
+@*Simple link to Page2*@
+
+<a href="@Url.Action("Page2","Home")" > Page2 </a>
+
+@* using a model to pass data from controller to page 2*@
+<form asp-action="Page2" method="post">
+    <label>First Name</label>
+    <input asp-for="FName"/>
+    <br />
+
+    <label>Last Name</label>
+    <input asp-for="LName" />
+    <br />
+
+    <label>Email</label>
+    <input asp-for="Email" />
+    <br />
+
+    <label>Phone Number</label>
+    <input asp-for="Phone" />
+    <br />
+
+    <label>Address</label>
+    <input asp-for="Address" />
+    <br />
+
+    <label>Username</label>
+    <input asp-for="Username" />
+    <br />
+
+    <label>Password</label>
+    <input asp-for="Password" />
+    <br />
+
+    <button type="submit">Submit</button>
+</form>
